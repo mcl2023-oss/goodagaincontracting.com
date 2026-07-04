@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Good Again Contracting | Residential Repair &amp; Remodeling in OKC</title>
-  <meta name="description" content="Good Again Contracting handles doors, windows, siding, painting, drywall, fencing, decks, and landscaping for homeowners across the greater Oklahoma City area. Get a free quote today." />
+  <title>Good Again Contracting | Design + Build Residential Remodeling in OKC</title>
+  <meta name="description" content="Good Again Contracting is a design-build residential studio in Oklahoma City. We design your remodel, then we build it — kitchens, baths, decks, siding, paint, and full home projects. Free consultations." />
   <meta name="geo.region" content="US-OK" />
   <meta name="geo.placename" content="Oklahoma City" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/home.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "name": "Good Again Contracting",
-    "description": "Residential repair and remodeling contractor serving the greater Oklahoma City area.",
+    "description": "Design-build residential remodeling studio serving the greater Oklahoma City area.",
     "telephone": "+1-572-274-4090",
     "email": "themicahlong@gmail.com",
     "areaServed": ["Oklahoma City", "Edmond", "Norman", "Moore", "Yukon", "Mustang", "Midwest City", "Bethany"],
@@ -28,17 +28,10 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <div class="topbar">
-    <div class="container">
-      <span>Serving the greater Oklahoma City area</span>
-      <span>Free estimates &nbsp;•&nbsp; <a href="tel:+15722744090">Call (572) 274-4090</a></span>
-    </div>
-  </div>
-
-  <header class="site-header">
-    <div class="container">
-      <a class="wordmark" href="index.html">Good <span>Again</span> Contracting<small>Residential Repair &amp; Remodeling</small></a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <header class="hd" id="top">
+    <div class="hd-inner">
+      <a class="wordmark" href="index.html">GOOD <span>AGAIN</span><small>Design + Build</small></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html" aria-current="page">Home</a></li>
@@ -49,230 +42,193 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <div class="header-cta">
-        <a class="header-phone" href="tel:+15722744090">(572) 274-4090</a>
-        <a class="btn btn--primary" href="contact.html">Get a Free Quote</a>
+      <div class="hd-cta">
+        <a class="hd-phone" href="tel:+15722744090">(572) 274-4090</a>
+        <a class="btn btn--gold" href="contact.html">Start a project</a>
       </div>
     </div>
   </header>
 
   <main id="main">
 
-    <!-- Hero -->
+    <!-- ============ HERO ============ -->
     <section class="hero">
-      <div class="container">
-        <h1>Your home, made good again.</h1>
-        <p class="tagline">Honest, quality residential repair and remodeling across the greater Oklahoma City area — doors, siding, paint, drywall, fences, decks, and more. Done right, on time, at a fair price.</p>
-        <div class="hero-actions">
-          <a class="btn btn--primary btn--lg" href="contact.html">Get a Free Quote</a>
-          <a class="btn btn--outline-light btn--lg" href="tel:+15722744090">Call (572) 274-4090</a>
+      <div class="hero-media"><img src="assets/hero.jpg" alt="" aria-hidden="true" /></div>
+      <div class="hero-shade"></div>
+      <div class="hero-inner">
+        <p class="kicker rv">Design + Build · Oklahoma City</p>
+        <h1>
+          <span class="h1-line rv d1">We design it.</span>
+          <span class="h1-line rv d2">We build it.</span>
+          <span class="h1-line rv d3">You <em>live</em> in it.</span>
+        </h1>
+        <p class="hero-sub rv d4">Good Again Contracting is a residential design-build studio. Bring us the idea — we'll draw the plan, price it honestly, and build it with our own hands.</p>
+        <div class="hero-cta rv d5">
+          <a class="btn btn--gold btn--lg" href="contact.html">Start your project</a>
+          <a class="btn btn--line btn--lg" href="#process">See how we work</a>
         </div>
-        <ul class="hero-trust">
-          <li>Licensed, bonded &amp; insured</li>
-          <li>Free, no-pressure estimates</li>
-          <li>We respond within 24 hours</li>
-          <li>Locally owned in OKC</li>
+      </div>
+      <div class="hero-stats rv d6">
+        <div><strong data-count="120">0</strong><span>projects completed</span></div>
+        <div><strong data-count="8">0</strong><span>trades in-house</span></div>
+        <div><strong data-count="100">0</strong><span>% owner-led builds</span></div>
+      </div>
+      <a class="scroll-cue" href="#studio" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ============ THE STUDIO ============ -->
+    <section class="studio" id="studio">
+      <div class="wrap grid-2">
+        <div class="studio-copy">
+          <p class="kicker rv">The studio</p>
+          <h2 class="rv d1">Most contractors start with a hammer.<br /><em>We start with a plan.</em></h2>
+          <p class="rv d2">Every project at Good Again begins on paper — a real design for your space, not a guess and a handshake. You'll see what you're getting and what it costs before a single board is cut. Then the same people who designed it show up and build it.</p>
+          <a class="text-link rv d3" href="about.html">Who we are <span aria-hidden="true">→</span></a>
+        </div>
+        <figure class="studio-fig rv d2">
+          <img src="assets/design-consult.jpg" alt="Designers reviewing house plans together" loading="lazy" />
+          <figcaption>Every build starts at the drawing table.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="process" id="process">
+      <div class="wrap">
+        <p class="kicker rv">How it works</p>
+        <h2 class="rv d1">Three steps between<br />your idea and your home.</h2>
+        <div class="steps">
+          <article class="step rv d1">
+            <span class="step-no">01</span>
+            <img src="assets/design-consult.jpg" alt="" loading="lazy" />
+            <h3>Consult</h3>
+            <p>We walk your space together, listen to what you want, and talk real budgets — free, no pressure.</p>
+          </article>
+          <article class="step rv d2">
+            <span class="step-no">02</span>
+            <img src="assets/design-sketch.jpg" alt="" loading="lazy" />
+            <h3>Design</h3>
+            <p>We draw the plan and price it line by line. You approve the design and the number before we start.</p>
+          </article>
+          <article class="step rv d3">
+            <span class="step-no">03</span>
+            <img src="assets/kitchen-wood.jpg" alt="" loading="lazy" />
+            <h3>Build</h3>
+            <p>Our own crew builds what we drew — on schedule, tidy jobsite, walkthrough at the end.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SCROLL WALKTHROUGH ============ -->
+    <section class="walk" id="walkthrough" aria-label="A project from start to finish">
+      <div class="walk-stage">
+        <video class="walk-v" src="assets/stage1-build.mp4" muted playsinline loop preload="metadata"></video>
+        <video class="walk-v" src="assets/stage2-finish.mp4" muted playsinline loop preload="none"></video>
+        <video class="walk-v" src="assets/stage3-reveal.mp4" muted playsinline loop preload="none"></video>
+        <div class="walk-shade"></div>
+        <div class="walk-copy">
+          <p class="kicker">One project, start to finish</p>
+          <div class="walk-caps">
+            <div class="walk-cap"><strong>The raw space</strong><p>Demo day. Everything that doesn't belong in your new home comes out.</p></div>
+            <div class="walk-cap"><strong>The craft</strong><p>Drywall, paint, trim — the slow, careful part most people never see.</p></div>
+            <div class="walk-cap"><strong>The reveal</strong><p>Keep scrolling into the finished space. This is the day we work for.</p></div>
+          </div>
+        </div>
+        <div class="walk-rail" aria-hidden="true">
+          <div class="walk-fill"></div>
+          <span class="walk-dot"></span><span class="walk-dot"></span><span class="walk-dot"></span>
+        </div>
+        <p class="walk-hint" aria-hidden="true">Keep scrolling ↓</p>
+      </div>
+    </section>
+
+    <!-- ============ BEFORE / AFTER ============ -->
+    <section class="ba">
+      <div class="wrap">
+        <p class="kicker rv">The difference</p>
+        <h2 class="rv d1">Drag the handle. <em>See it happen.</em></h2>
+        <div class="ba-frame rv d2" id="ba">
+          <img class="ba-after" src="assets/after.jpg" alt="Finished, renovated room" loading="lazy" />
+          <div class="ba-top"><img class="ba-before" src="assets/before.jpg" alt="Same room before renovation" loading="lazy" /></div>
+          <span class="ba-label ba-label--l">Before</span>
+          <span class="ba-label ba-label--r">After</span>
+          <div class="ba-handle" aria-hidden="true"><span>↔</span></div>
+          <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Reveal before and after" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="svc">
+      <div class="wrap">
+        <p class="kicker rv">What we take on</p>
+        <h2 class="rv d1">From one door<br />to the whole house.</h2>
+        <ul class="svc-list">
+          <li class="rv d1"><a href="services.html"><i>01</i><b>Kitchens &amp; Full Remodels</b><span>→</span></a></li>
+          <li class="rv d2"><a href="services.html"><i>02</i><b>Doors &amp; Windows</b><span>→</span></a></li>
+          <li class="rv d3"><a href="services.html"><i>03</i><b>Siding &amp; Exterior</b><span>→</span></a></li>
+          <li class="rv d4"><a href="services.html"><i>04</i><b>Paint &amp; Drywall</b><span>→</span></a></li>
+          <li class="rv d5"><a href="services.html"><i>05</i><b>Decks &amp; Fencing</b><span>→</span></a></li>
+          <li class="rv d6"><a href="services.html"><i>06</i><b>Landscaping</b><span>→</span></a></li>
         </ul>
       </div>
     </section>
 
-    <!-- Intro -->
-    <section class="section">
-      <div class="container split">
-        <div>
-          <span class="kicker">Who we are</span>
-          <h2>A contractor you can actually count on</h2>
-          <p style="margin-top: 0.9rem;">Good Again Contracting is a locally owned residential contractor serving Oklahoma City and the surrounding metro. We specialize in the repairs and upgrades that make the biggest difference in how your home looks, feels, and holds up — from a sticking front door to a full exterior refresh.</p>
-          <p style="margin-top: 0.9rem;">No runaround, no surprise charges, no disappearing acts. We show up when we say we will, keep you in the loop, and stand behind the work.</p>
-          <a class="btn btn--outline mt-2" href="about.html">More About Us</a>
-        </div>
-        <div class="ph ph--a" role="img" aria-label="Placeholder photo — completed home exterior project"><span>Photo coming soon</span></div>
-      </div>
-    </section>
-
-    <!-- Services preview -->
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section-head section-head--center">
-          <span class="kicker">What we do</span>
-          <h2>Residential services, inside and out</h2>
-          <p>From quick fixes to bigger upgrades, we handle the projects that keep your home solid and looking sharp.</p>
-        </div>
-        <div class="grid grid--4">
-          <div class="card">
-            <div class="ph ph--b" role="img" aria-label="Placeholder photo — door installation"><span>Photo coming soon</span></div>
-            <div class="card-body">
-              <h3>Doors &amp; Windows</h3>
-              <p>Entry and interior door installs, window seal repair, and draft fixes.</p>
-              <a class="card-link" href="services.html#doors">Learn more →</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="ph ph--c" role="img" aria-label="Placeholder photo — siding project"><span>Photo coming soon</span></div>
-            <div class="card-body">
-              <h3>Siding &amp; Painting</h3>
-              <p>Siding repair and replacement plus interior and exterior painting.</p>
-              <a class="card-link" href="services.html#siding">Learn more →</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="ph ph--d" role="img" aria-label="Placeholder photo — drywall finishing"><span>Photo coming soon</span></div>
-            <div class="card-body">
-              <h3>Drywall</h3>
-              <p>Patches, texture matching, and full finishing that disappears into the wall.</p>
-              <a class="card-link" href="services.html#drywall">Learn more →</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="ph ph--a" role="img" aria-label="Placeholder photo — deck and fence build"><span>Photo coming soon</span></div>
-            <div class="card-body">
-              <h3>Decks, Fencing &amp; Landscape</h3>
-              <p>New builds, repairs, and outdoor spaces you'll actually use.</p>
-              <a class="card-link" href="services.html#decks">Learn more →</a>
-            </div>
-          </div>
-        </div>
-        <div style="text-align:center; margin-top: 2.2rem;">
-          <a class="btn btn--outline" href="services.html">See All Services</a>
+    <!-- ============ CTA ============ -->
+    <section class="cta">
+      <div class="wrap">
+        <h2 class="rv">Have a project in mind?<br /><em>Let's design it together.</em></h2>
+        <div class="cta-actions rv d2">
+          <a class="btn btn--black btn--lg" href="contact.html">Get a free design consult</a>
+          <a class="cta-phone" href="tel:+15722744090">or call (572) 274-4090</a>
         </div>
       </div>
     </section>
-
-    <!-- Trust band -->
-    <section class="section section--green">
-      <div class="container">
-        <div class="stats">
-          <div class="stat"><strong>Local</strong><span>Owned &amp; operated in OKC</span></div>
-          <div class="stat"><strong>Licensed</strong><span>Bonded &amp; insured</span></div>
-          <div class="stat"><strong>24 hrs</strong><span>Quote response time</span></div>
-          <div class="stat"><strong>5.0★</strong><span>Homeowner rated</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured projects -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <span class="kicker">Recent work</span>
-          <h2>Projects we're proud of</h2>
-          <p>Project photos are on the way — here's a preview of the kind of work we do around the metro.</p>
-        </div>
-        <div class="grid grid--3">
-          <div class="card">
-            <div class="ph ph--b" role="img" aria-label="Placeholder photo — backyard privacy fence, Edmond"><span>Photo coming soon</span></div>
-            <div class="card-body">
-              <span class="badge">Fencing</span>
-              <h3>Backyard Privacy Fence</h3>
-              <p>Edmond, OK — cedar privacy fence with two custom gates.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="ph ph--c" role="img" aria-label="Placeholder photo — exterior repaint, Yukon"><span>Photo coming soon</span></div>
-            <div class="card-body">
-              <span class="badge">Painting</span>
-              <h3>Full Exterior Repaint</h3>
-              <p>Yukon, OK — prep, prime, and repaint with trim and door accents.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="ph ph--d" role="img" aria-label="Placeholder photo — new composite deck, Norman"><span>Photo coming soon</span></div>
-            <div class="card-body">
-              <span class="badge">Decking</span>
-              <h3>New Composite Deck</h3>
-              <p>Norman, OK — low-maintenance deck with built-in bench seating.</p>
-            </div>
-          </div>
-        </div>
-        <div style="text-align:center; margin-top: 2.2rem;">
-          <a class="btn btn--outline" href="projects.html">View the Full Portfolio</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Rotating reviews -->
-    <section class="section section--green">
-      <div class="container">
-        <div class="section-head section-head--center">
-          <span class="kicker" style="color: var(--amber-500);">What homeowners say</span>
-          <h2>Trusted around the metro</h2>
-        </div>
-        <div class="rotator" data-quotes='[
-          {"text":"They fixed our front door and repainted the whole exterior. Showed up on time every single day and the price matched the quote exactly.","name":"Sarah M., Edmond"},
-          {"text":"Our fence came out better than we imagined. Straightforward communication from the first call to the final walkthrough.","name":"James T., Oklahoma City"},
-          {"text":"Drywall repair you genuinely cannot find. They matched the texture perfectly and cleaned up like they were never here.","name":"Dana R., Moore"}
-        ]'>
-          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <blockquote></blockquote>
-          <cite></cite>
-          <div class="rotator-dots"></div>
-        </div>
-        <div style="text-align:center; margin-top: 2rem;">
-          <a class="btn btn--outline-light" href="reviews.html">Read More Reviews</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bottom CTA -->
-    <section class="section cta-band">
-      <div class="container">
-        <span class="kicker">Ready when you are</span>
-        <h2>Let's get your project started</h2>
-        <p>Tell us what needs doing and we'll get back to you within 24 hours with next steps — free estimate, zero pressure.</p>
-        <div class="hero-actions">
-          <a class="btn btn--primary btn--lg" href="contact.html">Get a Free Quote</a>
-          <a class="btn btn--outline btn--lg" href="tel:+15722744090">Call (572) 274-4090</a>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-wordmark">Good <span>Again</span> Contracting</div>
-          <p style="margin-top: 0.8rem;">Residential repair and remodeling for the greater Oklahoma City area. Licensed, bonded &amp; insured.</p>
-        </div>
-        <div>
-          <h4>Site</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Services</h4>
-          <ul>
-            <li><a href="services.html#doors">Doors &amp; Windows</a></li>
-            <li><a href="services.html#siding">Siding</a></li>
-            <li><a href="services.html#painting">Painting &amp; Drywall</a></li>
-            <li><a href="services.html#decks">Decks &amp; Fencing</a></li>
-            <li><a href="services.html#landscaping">Landscaping</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="tel:+15722744090">(572) 274-4090</a></li>
-            <li><a href="mailto:themicahlong@gmail.com">themicahlong@gmail.com</a></li>
-            <li>Greater Oklahoma City area</li>
-          </ul>
-        </div>
+  <footer class="ft">
+    <div class="wrap ft-grid">
+      <div>
+        <p class="wordmark ft-mark">GOOD <span>AGAIN</span></p>
+        <p>Design-build residential remodeling for the greater Oklahoma City area.</p>
       </div>
-      <div class="footer-bottom">
-        <span>© <span data-year></span> Good Again Contracting. All rights reserved.</span>
-        <span>Licensed • Bonded • Insured • <a href="https://portal.goodagaincontracting.com">Employee Portal</a></span>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li>Kitchens &amp; Remodels</li>
+          <li>Doors &amp; Windows</li>
+          <li>Siding &amp; Paint</li>
+          <li>Decks &amp; Fencing</li>
+          <li>Landscaping</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+15722744090">(572) 274-4090</a></li>
+          <li><a href="mailto:themicahlong@gmail.com">themicahlong@gmail.com</a></li>
+          <li>Greater Oklahoma City area</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap ft-bottom">
+      <span>© <span data-year></span> Good Again Contracting. All rights reserved.</span>
+      <span>Licensed • Bonded • Insured • <a href="https://portal.goodagaincontracting.com">Employee Portal</a></span>
     </div>
   </footer>
 
-  <a class="float-call" href="tel:+15722744090">📞 Call Now</a>
-  <script src="js/main.js"></script>
+  <a class="float-call" href="tel:+15722744090">Call Now</a>
+  <script src="js/home.js"></script>
 </body>
 </html>

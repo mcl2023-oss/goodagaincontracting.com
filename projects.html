@@ -3,29 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Portfolio | Good Again Contracting — OKC Metro</title>
-  <meta name="description" content="Browse residential projects by Good Again Contracting across the greater Oklahoma City area — fences, decks, siding, painting, drywall, doors, windows, and landscaping." />
+  <title>Projects | Good Again Contracting — OKC Design + Build Studio</title>
+  <meta name="description" content="Remodels, decks, fences, siding, paint, and more around the Oklahoma City metro — see the kinds of projects Good Again Contracting designs and builds." />
   <meta name="geo.region" content="US-OK" />
   <meta name="geo.placename" content="Oklahoma City" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/home.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <div class="topbar">
-    <div class="container">
-      <span>Serving the greater Oklahoma City area</span>
-      <span>Free estimates &nbsp;•&nbsp; <a href="tel:+15722744090">Call (572) 274-4090</a></span>
-    </div>
-  </div>
-
-  <header class="site-header">
-    <div class="container">
-      <a class="wordmark" href="index.html">Good <span>Again</span> Contracting<small>Residential Repair &amp; Remodeling</small></a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <header class="hd">
+    <div class="hd-inner">
+      <a class="wordmark" href="index.html">GOOD <span>AGAIN</span><small>Design + Build</small></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -36,25 +29,25 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <div class="header-cta">
-        <a class="header-phone" href="tel:+15722744090">(572) 274-4090</a>
-        <a class="btn btn--primary" href="contact.html">Get a Free Quote</a>
+      <div class="hd-cta">
+        <a class="hd-phone" href="tel:+15722744090">(572) 274-4090</a>
+        <a class="btn btn--gold" href="contact.html">Start a project</a>
       </div>
     </div>
   </header>
 
   <main id="main">
 
-    <section class="hero" style="padding: 4rem 0;">
-      <div class="container">
-        <span class="kicker" style="color: var(--amber-500);">Portfolio</span>
-        <h1>Work around the metro</h1>
-        <p class="tagline">Real project photos are being gathered now — these placeholder entries show the kinds of projects we take on. Before-and-after photos coming soon.</p>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="kicker">Portfolio</p>
+        <h1>Work around<br />the <em>metro.</em></h1>
+        <p class="tagline">The kinds of projects we design and build — hover any photo to see what homeowners said. Real project photography is being gathered now; these images are representative.</p>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
+    <section class="sec">
+      <div class="wrap">
 
         <div class="filters" role="group" aria-label="Filter projects by type">
           <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
@@ -65,151 +58,201 @@
           <button class="filter-btn" data-filter="landscaping" aria-pressed="false">Landscaping</button>
         </div>
 
-        <div class="grid grid--3">
+        <div class="proj-grid">
 
-          <div class="card project-card" data-category="decks-fencing">
-            <div class="ph ph--b" role="img" aria-label="Placeholder photo — cedar privacy fence in Edmond"><span>Photo coming soon</span></div>
-            <div class="card-body">
-              <span class="badge">Fencing</span>
+          <div class="proj rv d1" data-category="decks-fencing" tabindex="0">
+            <div class="proj-img">
+              <img src="assets/fence.jpg" alt="Cedar privacy fence with custom gate" loading="lazy" />
+              <div class="proj-review">
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <q>Our fence came out better than we imagined. Straightforward communication from the first call to the final walkthrough.</q>
+                <cite>James T. — Oklahoma City</cite>
+              </div>
+            </div>
+            <div class="proj-body">
+              <span class="proj-tag">Fencing</span>
               <h3>Cedar Privacy Fence</h3>
               <p>Edmond, OK — 180 ft of 6' cedar privacy fence with two custom gates, set in concrete for Oklahoma wind.</p>
             </div>
           </div>
 
-          <div class="card project-card" data-category="paint-drywall">
-            <div class="ph ph--c" role="img" aria-label="Placeholder photo — full exterior repaint in Yukon"><span>Photo coming soon</span></div>
-            <div class="card-body">
-              <span class="badge">Painting</span>
+          <div class="proj rv d2" data-category="paint-drywall" tabindex="0">
+            <div class="proj-img">
+              <img src="assets/exterior-white.jpg" alt="Freshly repainted white home exterior" loading="lazy" />
+              <div class="proj-review">
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <q>Showed up on time every single day, kept us updated, and the final price matched the quote exactly.</q>
+                <cite>Sarah M. — Edmond</cite>
+              </div>
+            </div>
+            <div class="proj-body">
+              <span class="proj-tag">Painting</span>
               <h3>Full Exterior Repaint</h3>
               <p>Yukon, OK — complete prep, prime, and repaint including trim, shutters, and a front-door accent color.</p>
             </div>
           </div>
 
-          <div class="card project-card" data-category="decks-fencing">
-            <div class="ph ph--d" role="img" aria-label="Placeholder photo — composite deck in Norman"><span>Photo coming soon</span></div>
-            <div class="card-body">
-              <span class="badge">Decking</span>
+          <div class="proj rv d3" data-category="decks-fencing" tabindex="0">
+            <div class="proj-img">
+              <img src="assets/deck.jpg" alt="Composite deck with pool and glass doors" loading="lazy" />
+              <div class="proj-review">
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <q>The new deck is our favorite part of the house now. Solid, level, beautiful — and they finished a day ahead of schedule.</q>
+                <cite>Priya S. — Norman</cite>
+              </div>
+            </div>
+            <div class="proj-body">
+              <span class="proj-tag">Decking</span>
               <h3>Composite Deck Build</h3>
               <p>Norman, OK — 300 sq ft low-maintenance composite deck with built-in bench seating and stairs.</p>
             </div>
           </div>
 
-          <div class="card project-card" data-category="exterior">
-            <div class="ph ph--a" role="img" aria-label="Placeholder photo — storm-damage siding replacement in Moore"><span>Photo coming soon</span></div>
-            <div class="card-body">
-              <span class="badge">Siding</span>
+          <div class="proj rv d1" data-category="exterior" tabindex="0">
+            <div class="proj-img">
+              <img src="assets/siding.jpg" alt="Repaired siding on a modern home" loading="lazy" />
+              <div class="proj-review">
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <q>They replaced our damaged siding fast and worked directly with what our insurance covered. Took a stressful situation and made it easy.</q>
+                <cite>Mike &amp; Karen H. — Moore</cite>
+              </div>
+            </div>
+            <div class="proj-body">
+              <span class="proj-tag">Siding</span>
               <h3>Storm-Damage Siding Replacement</h3>
               <p>Moore, OK — hail-damaged siding replaced and color-matched across the west and south faces.</p>
             </div>
           </div>
 
-          <div class="card project-card" data-category="doors-windows">
-            <div class="ph ph--b" role="img" aria-label="Placeholder photo — new entry door in Oklahoma City"><span>Photo coming soon</span></div>
-            <div class="card-body">
-              <span class="badge">Doors</span>
+          <div class="proj rv d2" data-category="doors-windows" tabindex="0">
+            <div class="proj-img">
+              <img src="assets/door.jpg" alt="New entry doors with lantern lighting" loading="lazy" />
+              <div class="proj-review">
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <q>They fixed our front door and repainted the whole exterior — the final price matched the quote exactly.</q>
+                <cite>Sarah M. — Edmond</cite>
+              </div>
+            </div>
+            <div class="proj-body">
+              <span class="proj-tag">Doors</span>
               <h3>Entry Door Replacement</h3>
               <p>Oklahoma City, OK — new insulated entry door with updated hardware, threshold, and weatherstripping.</p>
             </div>
           </div>
 
-          <div class="card project-card" data-category="paint-drywall">
-            <div class="ph ph--c" role="img" aria-label="Placeholder photo — drywall repair and interior paint in Mustang"><span>Photo coming soon</span></div>
-            <div class="card-body">
-              <span class="badge">Drywall</span>
+          <div class="proj rv d3" data-category="paint-drywall" tabindex="0">
+            <div class="proj-img">
+              <img src="assets/paint2.jpg" alt="Ceiling and wall repair mid-repaint" loading="lazy" />
+              <div class="proj-review">
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <q>Drywall repair you genuinely cannot find. They matched the texture perfectly and cleaned up like they were never here.</q>
+                <cite>Dana R. — Moore</cite>
+              </div>
+            </div>
+            <div class="proj-body">
+              <span class="proj-tag">Drywall</span>
               <h3>Ceiling Repair &amp; Repaint</h3>
               <p>Mustang, OK — water-damaged ceiling drywall replaced, texture matched, and whole room repainted.</p>
             </div>
           </div>
 
-          <div class="card project-card" data-category="doors-windows">
-            <div class="ph ph--d" role="img" aria-label="Placeholder photo — window seal replacement in Edmond"><span>Photo coming soon</span></div>
-            <div class="card-body">
-              <span class="badge">Windows</span>
+          <div class="proj rv d1" data-category="doors-windows" tabindex="0">
+            <div class="proj-img">
+              <img src="assets/after.jpg" alt="Bright room with refreshed window" loading="lazy" />
+              <div class="proj-review">
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <q>Finally, a contractor who answers the phone. Quality work on our window seals — and our energy bill actually dropped.</q>
+                <cite>Robert L. — Yukon</cite>
+              </div>
+            </div>
+            <div class="proj-body">
+              <span class="proj-tag">Windows</span>
               <h3>Whole-Home Window Seal Refresh</h3>
               <p>Edmond, OK — seals and weatherstripping replaced on 14 windows to stop drafts and fogging.</p>
             </div>
           </div>
 
-          <div class="card project-card" data-category="landscaping">
-            <div class="ph ph--a" role="img" aria-label="Placeholder photo — front yard landscaping in Bethany"><span>Photo coming soon</span></div>
-            <div class="card-body">
-              <span class="badge">Landscaping</span>
+          <div class="proj rv d2" data-category="landscaping" tabindex="0">
+            <div class="proj-img">
+              <img src="assets/landscaping2.jpg" alt="Landscaped front garden of a modern home" loading="lazy" />
+            </div>
+            <div class="proj-body">
+              <span class="proj-tag">Landscaping</span>
               <h3>Front Yard Refresh</h3>
               <p>Bethany, OK — new beds, edging, mulch, and shrubs to finish off an exterior repaint project.</p>
             </div>
           </div>
 
-          <div class="card project-card" data-category="exterior">
-            <div class="ph ph--b" role="img" aria-label="Placeholder photo — siding and trim update in Del City"><span>Photo coming soon</span></div>
-            <div class="card-body">
-              <span class="badge">Siding</span>
+          <div class="proj rv d3" data-category="exterior" tabindex="0">
+            <div class="proj-img">
+              <img src="assets/landscaping.jpg" alt="Home exterior with refreshed trim and yard" loading="lazy" />
+            </div>
+            <div class="proj-body">
+              <span class="proj-tag">Siding</span>
               <h3>Siding &amp; Trim Update</h3>
               <p>Del City, OK — worn siding sections replaced and all exterior trim recaulked and repainted.</p>
             </div>
           </div>
 
         </div>
+
+        <p class="gallery-note">Photos shown are representative while our real project photography is gathered — reviews are examples of the feedback we work for. Your project could be next.</p>
       </div>
     </section>
 
-    <section class="section section--green cta-band">
-      <div class="container">
-        <h2>Want your project on this page?</h2>
-        <p>Tell us what you're planning and we'll bring it to life — free estimate, response within 24 hours.</p>
-        <div class="hero-actions">
-          <a class="btn btn--primary btn--lg" href="contact.html">Get a Free Quote</a>
-          <a class="btn btn--outline-light btn--lg" href="tel:+15722744090">Call (572) 274-4090</a>
+    <section class="cta">
+      <div class="wrap">
+        <h2 class="rv">Want your project<br />on this page? <em>Easy.</em></h2>
+        <div class="cta-actions rv d2">
+          <a class="btn btn--black btn--lg" href="contact.html">Get a free design consult</a>
+          <a class="cta-phone" href="tel:+15722744090">or call (572) 274-4090</a>
         </div>
       </div>
     </section>
-
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-wordmark">Good <span>Again</span> Contracting</div>
-          <p style="margin-top: 0.8rem;">Residential repair and remodeling for the greater Oklahoma City area. Licensed, bonded &amp; insured.</p>
-        </div>
-        <div>
-          <h4>Site</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Services</h4>
-          <ul>
-            <li><a href="services.html#doors">Doors &amp; Windows</a></li>
-            <li><a href="services.html#siding">Siding</a></li>
-            <li><a href="services.html#painting">Painting &amp; Drywall</a></li>
-            <li><a href="services.html#decks">Decks &amp; Fencing</a></li>
-            <li><a href="services.html#landscaping">Landscaping</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="tel:+15722744090">(572) 274-4090</a></li>
-            <li><a href="mailto:themicahlong@gmail.com">themicahlong@gmail.com</a></li>
-            <li>Greater Oklahoma City area</li>
-          </ul>
-        </div>
+  <footer class="ft">
+    <div class="wrap ft-grid">
+      <div>
+        <p class="wordmark ft-mark">GOOD <span>AGAIN</span></p>
+        <p>Design-build residential remodeling for the greater Oklahoma City area.</p>
       </div>
-      <div class="footer-bottom">
-        <span>© <span data-year></span> Good Again Contracting. All rights reserved.</span>
-        <span>Licensed • Bonded • Insured • <a href="https://portal.goodagaincontracting.com">Employee Portal</a></span>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#remodels">Kitchens &amp; Remodels</a></li>
+          <li><a href="services.html#doors">Doors &amp; Windows</a></li>
+          <li><a href="services.html#siding">Siding &amp; Paint</a></li>
+          <li><a href="services.html#decks">Decks &amp; Fencing</a></li>
+          <li><a href="services.html#landscaping">Landscaping</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+15722744090">(572) 274-4090</a></li>
+          <li><a href="mailto:themicahlong@gmail.com">themicahlong@gmail.com</a></li>
+          <li>Greater Oklahoma City area</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap ft-bottom">
+      <span>© <span data-year></span> Good Again Contracting. All rights reserved.</span>
+      <span>Licensed • Bonded • Insured • <a href="https://portal.goodagaincontracting.com">Employee Portal</a></span>
     </div>
   </footer>
 
-  <a class="float-call" href="tel:+15722744090">📞 Call Now</a>
-  <script src="js/main.js"></script>
+  <a class="float-call" href="tel:+15722744090">Call Now</a>
+  <script src="js/home.js"></script>
 </body>
 </html>

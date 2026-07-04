@@ -3,29 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Get a Free Quote | Good Again Contracting — OKC Metro</title>
-  <meta name="description" content="Request a free quote from Good Again Contracting. Call (572) 274-4090 or send project details — we respond within 24 hours. Serving the greater Oklahoma City area." />
+  <title>Contact | Good Again Contracting — Free Design Consult in OKC</title>
+  <meta name="description" content="Tell Good Again Contracting about your project — free design consult and quote, response within 24 hours, serving the greater Oklahoma City metro." />
   <meta name="geo.region" content="US-OK" />
   <meta name="geo.placename" content="Oklahoma City" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/home.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <div class="topbar">
-    <div class="container">
-      <span>Serving the greater Oklahoma City area</span>
-      <span>Free estimates &nbsp;•&nbsp; <a href="tel:+15722744090">Call (572) 274-4090</a></span>
-    </div>
-  </div>
-
-  <header class="site-header">
-    <div class="container">
-      <a class="wordmark" href="index.html">Good <span>Again</span> Contracting<small>Residential Repair &amp; Remodeling</small></a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <header class="hd">
+    <div class="hd-inner">
+      <a class="wordmark" href="index.html">GOOD <span>AGAIN</span><small>Design + Build</small></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -36,35 +29,36 @@
           <li><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
       </nav>
-      <div class="header-cta">
-        <a class="header-phone" href="tel:+15722744090">(572) 274-4090</a>
-        <a class="btn btn--primary" href="contact.html">Get a Free Quote</a>
+      <div class="hd-cta">
+        <a class="hd-phone" href="tel:+15722744090">(572) 274-4090</a>
+        <a class="btn btn--gold" href="contact.html">Start a project</a>
       </div>
     </div>
   </header>
 
   <main id="main">
 
-    <section class="hero" style="padding: 4rem 0;">
-      <div class="container">
-        <span class="kicker" style="color: var(--amber-500);">Contact</span>
-        <h1>Get your free quote</h1>
-        <p class="tagline">Tell us a little about your project and we'll get back to you within 24 hours. Prefer to talk? Call any time — we answer.</p>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="kicker">Contact</p>
+        <h1>Let's talk about<br />your <em>project.</em></h1>
+        <p class="tagline">Tell us a little about what you're planning — a repair, a refresh, or the remodel you've been sketching on napkins — and we'll get back to you within 24 hours. Prefer to talk? Call any time, we answer.</p>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container contact-layout">
+    <section class="sec">
+      <div class="wrap contact-layout">
 
         <div>
-          <h2 style="margin-bottom: 0.5rem;">Request a quote</h2>
-          <p class="form-note" style="margin-bottom: 1.6rem;">Takes about a minute. We respond within 24 hours — usually much faster.</p>
+          <p class="kicker rv">Free consult</p>
+          <h2 class="rv d1" style="font-size: clamp(1.7rem, 3.4vw, 2.4rem);">Request a quote</h2>
+          <p class="form-note rv d1" style="margin: 0.6rem 0 1.6rem;">Takes about a minute. We respond within 24 hours — usually much faster.</p>
 
           <div id="form-success" class="form-success" hidden>
             Thanks! Your email app should open with your request ready to send. If it doesn't, just call or email us directly — <a href="tel:+15722744090">(572) 274-4090</a> or <a href="mailto:themicahlong@gmail.com">themicahlong@gmail.com</a>.
           </div>
 
-          <form id="quote-form" class="form-grid" novalidate>
+          <form id="quote-form" class="form-grid rv d2" novalidate>
             <div class="field">
               <label for="name">Name *</label>
               <input type="text" id="name" name="name" autocomplete="name" required />
@@ -81,6 +75,7 @@
               <label for="projectType">Project type *</label>
               <select id="projectType" name="projectType" required>
                 <option value="">Select one…</option>
+                <option>Kitchen / full remodel</option>
                 <option>Doors</option>
                 <option>Window seals / windows</option>
                 <option>Siding</option>
@@ -114,16 +109,16 @@
             </div>
             <div class="field full">
               <label for="details">Tell us about the project *</label>
-              <textarea id="details" name="details" required placeholder="e.g. Our backyard fence is leaning after the last storm and two panels need replacing…"></textarea>
+              <textarea id="details" name="details" required placeholder="e.g. We want to open up the kitchen wall and redo the cabinets — looking for design ideas and a realistic budget…"></textarea>
             </div>
             <div class="full">
-              <button type="submit" class="btn btn--primary btn--lg">Send Quote Request</button>
+              <button type="submit" class="btn btn--gold btn--lg">Send quote request</button>
               <p class="form-note" style="margin-top: 0.8rem;">No spam, no sales pressure — just a real answer about your project.</p>
             </div>
           </form>
         </div>
 
-        <aside class="contact-aside">
+        <aside class="contact-aside rv d3">
           <div>
             <h3>Call or text</h3>
             <a class="big-phone" href="tel:+15722744090">(572) 274-4090</a>
@@ -159,54 +154,50 @@
 
       </div>
     </section>
-
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-wordmark">Good <span>Again</span> Contracting</div>
-          <p style="margin-top: 0.8rem;">Residential repair and remodeling for the greater Oklahoma City area. Licensed, bonded &amp; insured.</p>
-        </div>
-        <div>
-          <h4>Site</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Services</h4>
-          <ul>
-            <li><a href="services.html#doors">Doors &amp; Windows</a></li>
-            <li><a href="services.html#siding">Siding</a></li>
-            <li><a href="services.html#painting">Painting &amp; Drywall</a></li>
-            <li><a href="services.html#decks">Decks &amp; Fencing</a></li>
-            <li><a href="services.html#landscaping">Landscaping</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="tel:+15722744090">(572) 274-4090</a></li>
-            <li><a href="mailto:themicahlong@gmail.com">themicahlong@gmail.com</a></li>
-            <li>Greater Oklahoma City area</li>
-          </ul>
-        </div>
+  <footer class="ft">
+    <div class="wrap ft-grid">
+      <div>
+        <p class="wordmark ft-mark">GOOD <span>AGAIN</span></p>
+        <p>Design-build residential remodeling for the greater Oklahoma City area.</p>
       </div>
-      <div class="footer-bottom">
-        <span>© <span data-year></span> Good Again Contracting. All rights reserved.</span>
-        <span>Licensed • Bonded • Insured • <a href="https://portal.goodagaincontracting.com">Employee Portal</a></span>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#remodels">Kitchens &amp; Remodels</a></li>
+          <li><a href="services.html#doors">Doors &amp; Windows</a></li>
+          <li><a href="services.html#siding">Siding &amp; Paint</a></li>
+          <li><a href="services.html#decks">Decks &amp; Fencing</a></li>
+          <li><a href="services.html#landscaping">Landscaping</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+15722744090">(572) 274-4090</a></li>
+          <li><a href="mailto:themicahlong@gmail.com">themicahlong@gmail.com</a></li>
+          <li>Greater Oklahoma City area</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap ft-bottom">
+      <span>© <span data-year></span> Good Again Contracting. All rights reserved.</span>
+      <span>Licensed • Bonded • Insured • <a href="https://portal.goodagaincontracting.com">Employee Portal</a></span>
     </div>
   </footer>
 
-  <a class="float-call" href="tel:+15722744090">📞 Call Now</a>
-  <script src="js/main.js"></script>
+  <a class="float-call" href="tel:+15722744090">Call Now</a>
+  <script src="js/home.js"></script>
 </body>
 </html>
