@@ -619,6 +619,8 @@ a { color: var(--green-800); }
   .hero { padding: 4rem 0 4.5rem; }
   .footer-grid { grid-template-columns: 1fr; }
   .float-call { display: inline-block; }
+  /* keep the fixed call pill from covering the footer's last line */
+  .site-footer { padding-bottom: 6rem; }
   .topbar .container { justify-content: center; text-align: center; }
   .header-phone { display: none; }
   .stats { grid-template-columns: 1fr 1fr; }
