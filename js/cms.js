@@ -22,8 +22,10 @@
 
   function apply(c) {
     if (!c) return;
+    var here = location.pathname.split("/").pop() || "index.html";
     var orders = [];
     (c.overrides || []).forEach(function (o) {
+      if (o.page && o.page !== here) return; // overrides are per-page
       if (o.type === "order") { orders.push(o); return; }
       try {
         document.querySelectorAll(o.sel).forEach(function (el) {
